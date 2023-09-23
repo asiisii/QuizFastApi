@@ -1,0 +1,15 @@
+python3 -m venv .venv 
+. .venv/bin/activate 
+pip install fastapi sqlalchemy psycopg2-binary
+pip list - to get the list of installed packages
+pip install python-dotenv - for environment variables
+
+uvicorn main:app --reload
+
+
+
+- database.py -- setup to connect to database
+- model.py -- create modles to define the table 
+- schema.py -- create basemodel to define type of data
+- main.py -- connect to db,
+- .env -- to have environment variables
